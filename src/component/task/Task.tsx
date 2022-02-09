@@ -24,7 +24,7 @@ const TaskComponent: React.FC<Props> = ({index, listId, task, variables, setters
         setters.setLists(variables.lists.map((list: List) => {
             if (list.id === listId) {
                 list.tasks = list.tasks.map((task: Task) => 
-                    task.id === id ? {...task, compeleted:!task.completed} : task 
+                    task.id === id ? {...task, completed:!task.completed} : task 
                 );          
             }
             return list;
@@ -119,7 +119,7 @@ const TaskComponent: React.FC<Props> = ({index, listId, task, variables, setters
                         <div className="card-footer bg-dark">
                             <div className="btn-group" role="group">
                                 { !edit ? <button disabled={edit} onClick={() => pinTask(task.id)} type="button" className="btn btn-primary"> Pin <BsFillPinAngleFill/></button> : null }
-                                { edit ? ( <input type="submit" className="btn btn-primary" value="Update" /> ) : ( task.completed ? null : <button className="btn btn-warning" disabled={task.completed} onClick={() => { setEdit(!edit) }}>Edit <BsPencilSquare/></button> ) }
+                                { edit ? ( <input type="submit" className="btn btn-primary" value="Update" /> ) : <button className="btn btn-warning" disabled={task.completed} onClick={() => { setEdit(!edit) }}>Edit <BsPencilSquare/></button> }
                                 { !edit ? <button disabled={edit} onClick={() => deleteTask(task.id)} type="button" className="btn btn-danger">Delete <BsFillTrashFill/></button> : null }
                             </div>
                         </div>
