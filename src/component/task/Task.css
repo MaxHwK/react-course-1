@@ -1,0 +1,25 @@
+.card-body {
+    background: rgb(236, 236, 236);
+    color: black;
+}
+
+.task-card .card-body {
+    border: 1px solid darkslategrey;
+}
+
+.badge {
+    margin: 10px;
+}
+
+.btn-group {
+    width: 100%;
+}
+
+.btn-group .btn {
+    width: 33%;
+    font-size: 14px;
+}
+
+.btn-right {
+    margin: 10px 0px 0px 72%;
+}

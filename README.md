@@ -1,6 +1,6 @@
-# React course 1
+# React Course 1 - To Do List
 
-## 🚀 Réalisé par GIRON Maxence
+## 🚀 Realized by GIRON Maxence
 
 ## Getting started
 

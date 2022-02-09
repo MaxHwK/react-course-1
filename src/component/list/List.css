@@ -1,0 +1,13 @@
+.card {
+    margin: 10px;
+}
+
+.card-header, 
+.card-footer {
+    color: azure;
+    text-align: center;
+}
+
+.btn-right {
+    margin: 10px 0px 0px 72%;
+}
